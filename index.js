@@ -44,6 +44,7 @@ app.get("/webhook", (req, res) => {
       res.sendStatus(403);
     }
   }
+  res.status(500).send("Error");
 });
 
 // Creates the endpoint for your webhook
